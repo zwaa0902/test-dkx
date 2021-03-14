@@ -1,18 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    min-height: 100vh;
+    padding: 5rem 0;
+    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    form {
-        width: 300px;
-        display: grid;
-        grid-row-gap: 1rem;
-    }
-//     filter: blur(2px);
-//   -webkit-filter: blur(2px);
 `;
 
 export const Title = styled.h1`
@@ -26,10 +20,10 @@ export const Title = styled.h1`
     a:active {
         text-decoration: underline;
     }
-
+    color: #0c3d75;
     margin: 0;
     line-height: 1.15;
-    font-size: 4rem;
+    font-size: 2rem;
 
     text-align: center;
 `;
@@ -59,11 +53,11 @@ export const Description = styled.p`
     }
 `;
 
-export const Grid = styled.div`
+export const GridCustom = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     max-width: 800px;
     margin-top: 3rem;
 
@@ -74,11 +68,11 @@ export const Grid = styled.div`
 `;
 
 export const Card = styled.a`
-    margin: 1rem;
-    flex-basis: 45%;
+    margin: 3rem;
+    // flex-basis: 45%;
     padding: 1.5rem;
     text-align: left;
-    color: inherit;
+    color: #0c3d75;
     text-decoration: none;
     border: 1px solid #eaeaea;
     border-radius: 10px;
@@ -102,43 +96,8 @@ export const Card = styled.a`
         line-height: 1.5;
     }
 `;
+
+
 export const DrawTable = styled.table`
-    border: 1px solid #a5c9ff;
-    border-collapse: separate;
-    border-radius:6px;
-    -moz-border-radius:6px;
-    border-spacing: 0rem;
-    margin: auto;
-   
-    th {
-        color:#194a84;
-        text-align:center;
-        border-bottom: 1px solid #a5c9ff;
-        padding: 10px;
-        
-    }
-
-
-
-    tbody > tr:hover {
-        cursor:pointer;
-        background-color: #a5c9ff;
-        color:white;
-    }
-
-    tbody > tr:active {
-        background-color: #a5c9ff;
-        color:white;
-    }
-
-    td {
-        color:#194a84;
-        font-weight: 600;
-        text-align:center;
-        border:none;
-        padding: 20px 20px;
-        border-bottom: 1px solid #a5c9ff;
-    }
+    border: 1px solid blue;
 `;
-
-
